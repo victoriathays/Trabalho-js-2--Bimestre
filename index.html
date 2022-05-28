@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     *{
+         padding: 10px;
+         margin: 5px;
+        
+        font-family: Arial, Helvetica, sans-serif;
+     
+      }
+      table{
+          background-color:#dda0dd;
+      }
+
+      body{
+          display: grid;
+          justify-content: center;
+      }
+      
+     h1{
+         text-align: center;
+     }
+     button{
+         background-color: #dda0dd;
+     }
+      
+    </style>
+    
+</head>
+    
+<body>
+    <h1> Planilha de Cálculos</h1>
+    <table border="1">
+        
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="col" colspan="3">RECEITAS</th>
+            </tr>
+            <tr>
+                <th scope="col" >1</th>
+                <td>Valor Base(R$)</td>
+                <td><input type="Number" id="valor_base" name="valor_base" form="formulario"></td>
+            </tr>
+            <tr>
+                <th scope="col">2</th>
+                <td>Ajuda transporte(R$)</td>
+                <td><input type="Number" id="Ajuda_transporte" name="Ajuda_transporte" form="formulario"></td>
+            </tr>
+            <tr>
+                <th scope="col">3</th>
+                <td>Ajuda alimentação(R$)</td>
+                <td><input type="Number" id="Ajuda_alimentação" name="Ajuda_alimentação" form="formulario"></td>
+            </tr>
+            <tr>
+                <th scope="col">4</th>
+                <th>Receita Total(R$)</th>
+                <td><input type="number" id="Receita_Total" name="Receita_Total" form="formulario" disabled></td>
+                
+            </tr>
+            <tr>
+                <th scope="col" colspan="3">DESCONTOS</th>
+            </tr>
+            <tr>
+                <th scope="col">5</th>
+                <td>Desconto de Automóvel(R$)</td>
+                <td><input type="number" id="Desconto_de_Automóvel" name="Desconto_de_Automóvel" form="formulario"></td>
+            </tr>
+            <tr>
+                <th scope="col">6</th>
+                <td>Faltas(R$)</td>
+                <td><input type="number" id="Faltas" name="Faltas" form="formulario"></td>
+            </tr>
+            <tr>
+                <th scope="col">7</th>
+                <th>Desconto Total(R$)</th>
+                <td><input type="number" id="Desconto_Total" name="Desconto_Total" form="formulario" disabled></td>
+                
+            </tr>
+            <tr>
+                <th scope="col" colspan="3">TOTAL</th>
+            </tr>
+            <tr>
+                <th scope="col">8</th>
+                <td>Total(R$)</td>
+                <td><input type="number" id="Total" name="Total" form="formulario" disabled></td>
+                
+            </tr>
+        </tbody>
+        
+    </table>
+<form id="formuario" action="">
+
+    <button id="Calcular">Calcular</button>
+    <button id="Cancelar">Cancelar</button>
+    
+  
+</form>
+
+</body>
+<script src="index.js"></script>
+</html>
